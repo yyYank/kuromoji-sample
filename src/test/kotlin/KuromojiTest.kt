@@ -7,7 +7,7 @@ public class KuromojiTest {
 
     @Test
     fun `Kotlinスタートブック`(){
-        tokenize("Kotlinスタートブック 新しいAndroidプログラミング")
+        tokenize("Kotlinスタートブック新しいAndroidプログラミング")
     }
 
     @Test
