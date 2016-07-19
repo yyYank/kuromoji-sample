@@ -1,12 +1,12 @@
-import org.atilika.kuromoji.Tokenizer
+import com.atilika.kuromoji.ipadic.Tokenizer
 
 /**
  */
 fun tokenize(message : String) {
-    val tokenizer = Tokenizer.builder().build()
+    val tokenizer = Tokenizer()
     val tokens = tokenizer.tokenize(message)
     tokens.forEach {
-        println(it.surfaceForm)
-        println(it. allFeatures)
+        println(it.surface)
+        println(it.allFeatures)
     }
 }
